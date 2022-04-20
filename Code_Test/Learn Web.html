@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Learn Web</title>
+    <link rel="stylesheet" href="Learn Web.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="toast Web.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="home">Home</a></li>
+            <li><a href="about">About</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Chicken</h1>
+
+        <hr>
+
+        <!--Alt attribute will be read by screenreader-->
+        <img src="chicdken.jpg" width="200px" height="200px" alt="It's chicken image!">
+        <img src="picture/chicken1.jpg">
+        <p>
+            <a href="https://mail.google.com">My email</a>
+        </p>
+        <p>
+            <a href="About me.html">About Page</a>
+
+        </p>
+        <section>
+            <p>The <b>chicken</b> (Gallus domesticus) is a <a href="https://en.wikipedia.org/wiki/Domestication"
+                    title="Domestication">domesticated
+                </a>, bird
+                with attributes of wild species such as the red and grey junglefowl [1] that are
+                originally from Southeastern Asia. Rooster or cock is a term for an adult male bird,
+                and a younger male may be called a cockerel. A male that has been castrated is a capon.
+                An adult female bird is called a hen and a sexually immature female is called a pullet.
+            </p>
+        </section>
+        <section>
+            <h2>Breeds Of Chicken</h2>
+            <ol>
+                <li>Bantam
+                    <ol>
+                        <li>Sikpish
+                            <ol>
+                                <li>Polish</li>
+                            </ol>
+                        </li>
+                        <li>Behavious
+                            <ol>
+                                <li>Pathe</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+                <li>Banten</li>
+            </ol>
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/%E0%B0%95%E0%B1%8B%E0%B0%A1%E0%B0%BF_%E0%B0%AA%E0%B0%BF%E0%B0%B2%E0%B1%8D%E0%B0%B2IMG20191207080730-01.jpg/298px-%E0%B0%95%E0%B1%8B%E0%B0%A1%E0%B0%BF_%E0%B0%AA%E0%B0%BF%E0%B0%B2%E0%B1%8D%E0%B0%B2IMG20191207080730-01.jpg">
+        </section>
+        <hr>
+
+        <p>
+            To see the world in a grain of sand<sup><a
+                    href="https://www.oxfordlearnersdictionaries.com/definition/english/sand_1?q=sand"
+                    style="color:red">[1]</a></sup><br>
+            And a haeaven in a wild flower<sup>[2]</sup><br>
+            hold infinity in the palm of your hand<sup>[3]</sup><br>
+            And eternity in an hour<sup>[4]</sup><br>
+        </p>
+        <p>Dịch</p>
+        <p>
+            Thấy thế giới từ trong lòng hạt đất<br>
+            Và thiên cung trong một nụ hoa đồng<br>
+            Nắm vô hạn trong lòng tay của bạn<br>
+            Và vĩnh hằng trong một thoáng hư không<br>
+        <p>
+            Được dịch vào <time datetime="2022-2-19">Feb 19</time>
+        </p>
+        <p>The Cure will be celebrating their 40th anniversary on <time datetime="2018-07-07">July 7</time> in London's
+            Hyde Park.</p>
+        </p>
+
+        <h2>I like H<sub>2</sub>o</h2>
+        <p>1/<sub>2</sub>+1/<sub>2</sub> = 1</p>
+
+        <!-- "&lt;" and "&#60;" là 1 trong những "Entity code" -->
+        <h2>1 &lt; 6 &#60; 10</h2>
+
+        <!-- "article", "header", "footer" là 1 trong những Semantic element -->
+        <article>
+            <header>
+                <h2>Sứ mệnh của bạn là gì ?</h2>
+                <h2>bạn cần làm gì?</h2>
+            </header>
+        </article>
+
+        <figure>
+            <img src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/elephant-660-480.jpg">
+            <figcaption>An elephant at sunset</figcaption>
+        </figure>
+
+        <article>
+            <ul>
+                <li>
+                    <data value="200">Nguyen Sy Thien</data>
+                </li>
+            </ul>
+        </article>
+
+        <section>
+            <table>
+                <thead>
+                    <tr>
+                        <th rowspan="2">Animal</th>
+                        <th colspan="2">Average mass</th>
+                        <th rowspan="2">Flighted</th>
+                    </tr>
+                    <tr>
+                        <th>KG</th>
+                        <th>LB</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ostrich</td>
+                        <td>104</td>
+                        <td>(202)</td>
+                        <td>No</td>
+                    </tr>
+            </table>
+            </tbody>
+        </section>
+
+        <hr>
+
+        <section>
+
+            <!-- Outside of a form, no default behavior -->
+            <button>OUTSIDE</button>
+
+            <form action="Lab/First_project/Emmet_demo.html">
+                <p>
+                    <label for="username">Enter username:</label>
+                    <input type="text" placeholder="user name" id="username" name="username" minlength="3"
+                        maxlength="10" required>
+                </p>
+                <p>
+                    <!-- Alternative way to label an input ( less common ) -->
+                    <labe>
+                        Enter password
+                        <input type="password" placeholder="password" name="password" required>
+                    </labe>
+                </p>
+                <!-- This button doesm't submit the form b/c of the type attribute -->
+                <button type="button">Can you choose color</button>
+                <!-- This button submits the form -->
+                <button type="submit">Can you choose color 1</button>
+                <p>
+                    <label for="color">Enter color</label>
+                    <input type="color" id="color" name="color">
+                </p>
+                <p>
+                    <button>submit</button>
+                    <input type="submit">
+                    <input type="submit" value="Click me">
+                </p>
+                <p><input type="checkbox"></p>
+                <input name="gender" type="radio">
+                <input name="gender" type="radio">
+                <input name="gender" type="radio">
+            </form>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Search Google</h2>
+            <form action="https://www.google.com/search">
+                <input type="text" name="q">
+                <button>Search</button>
+            </form>
+
+
+            <h2>Search Youtube</h2>
+            <form action="https://www.youtube.com/results">
+                <input type="checkbox" name="search_query" id="agree">
+                <label for="agree">I agree search Youtube</label><br>
+                <input type="text" name="search_query" id="agree">
+                <button>Submit</button>
+            </form>
+
+            <p> <input type="range" min="0" max="100" value="50" step="10">
+                <label>Volume</label>
+            </p>
+            <p>
+            <form action="https://www.youtube.com/results">
+                <label for="pets">Pleas Select an Pet:</label>
+                <select name="search_query" id="pets">
+                    <option value="fish" name="search_query" id="pets">Fish</option>
+                    <option value="dog" name="search_query" id="pets">Dog</option>
+                    <option value="cat" name="search_query" id="pets">Cat</option>
+                </select>
+                <button>Submit</button>
+            </form>
+            </p>
+            <p><label for="requests">Any special requests?</label>
+                <br>
+                <textarea id="requests" rows="5" cols="20" placeholder="Enter Request:"></textarea>
+            </p>
+        </section>
+        <hr>
+
+        <!-- CSS_Demo -->
+        <h1 id="css_demo">CSS_DEMO</h1>
+        <hr>
+        <section>
+            <h1 class="demo-1">Demo</h1>
+            <h1 class="demo-2">Demo</h1>
+            <h1 class="demo-3">Demo</h1>
+            <h1 class="demo-4">Demo</h1>
+            <hr>
+            <h1 class="text">Cuttlefish</h1>
+            <hr>
+            <p class="text">
+                Cuttlefish or cuttles[2] are marine <a href="#nowhere" id="demo">molluscs</a> of the order Sepiida. They
+                belong to
+                the class Cephalopoda,
+                which also includes squid, octopuses, and nautiluses. Cuttlefish have a unique internal shell, the
+                cuttlebone, which is used for control of buoyancy.
+            </p>
+            <h1 class="text_1">Range and habbit</h1>
+            <hr>
+            <p class="text_1">
+                Cuttlefish have large, W-shaped pupils, eight arms, and two tentacles furnished with denticulated
+                suckers, with which they secure their prey. They generally range in size from 15 to 25 cm (6 to 10 in),
+                with the largest species, Sepia apama, reaching 50 cm (20 in) in mantle length and over 10.5 kg (23 lb)
+                in mass.[3]
+            </p>
+            <h1 class="text_2">Anatomy and physiology</h1>
+            <hr>
+            <div id="special">
+                <p class="text_2">
+                    Cuttlefish eat small molluscs, crabs, shrimp, fish, octopus, worms, and other cuttlefish. Their
+                    predators include dolphins, sharks, fish, seals, seabirds, and other cuttlefish. The typical life
+                    expectancy of a cuttlefish is about 1–2 years. Studies are said to indicate cuttlefish to be among
+                    the
+                    most intelligent invertebrates.[4] Cuttlefish also have one of the largest brain-to-body size ratios
+                    of
+                    all invertebrates.[4]
+                </p>
+                <p>
+                <div class="text_2_1">The "cuttle" in cuttlefish comes from the Old English name for the species,
+                    cudele,
+                    which may be
+                    cognate
+                    with the Old Norse koddi (cushion) and the Middle Low German Kudel (rag).[5] The Greco-Roman world
+                    valued the cuttlefish as a source of the unique brown pigment the creature releases from its siphon
+                    when
+                    it is alarmed. The word for it in both Greek and Latin, sepia, now refers to the reddish-brown color
+                    sepia in English.
+                </div>
+                </p>
+                <div class="text_2">The "cuttle" in cuttlefish comes from the Old English name for the species, cudele,
+                    which may be
+                    cognate
+                    with the Old Norse koddi (cushion) and the Middle Low German Kudel (rag).[5] The Greco-Roman world
+                    valued the cuttlefish as a source of the unique brown pigment the creature releases from its siphon
+                    when
+                    it is alarmed. The word for it in both Greek and Latin, sepia, now refers to the reddish-brown color
+                    sepia in English.
+                </div>
+                <p>
+                <div class="text_2_2">The "cuttle" in cuttlefish comes from the Old English name for the species,
+                    cudele,
+                    which may be
+                    cognate
+                    with the Old Norse koddi (cushion) and the Middle Low German Kudel (rag).[5] The Greco-Roman world
+                    valued the cuttlefish as a source of the unique brown pigment the creature releases from its siphon
+                    when
+                    it is alarmed. The word for it in both Greek and Latin, sepia, now refers to the reddish-brown color
+                    sepia in English.
+                </div>
+                </p>
+                <p>
+                <div class="text_2_3">The "cuttle" in cuttlefish comes from the Old English name for the species,
+                    cudele,
+                    which may be
+                    cognate
+                    with the Old Norse koddi (cushion) and the Middle Low German Kudel (rag).[5] The Greco-Roman world
+                    valued the cuttlefish as a source of the unique brown pigment the creature releases from its siphon
+                    when
+                    it is alarmed. The word for it in both Greek and Latin, sepia, now refers to the reddish-brown color
+                    sepia in English.
+                </div>
+                </p>
+            </div>
+
+            <h2 class="text_3">visual system</h2>
+            <hr>
+            <p class="text_3">
+                The "cuttle" in cuttlefish comes from the Old English name for the species, cudele, which may be cognate
+                with the Old Norse koddi (cushion) and the Middle Low German Kudel (rag).[5] The Greco-Roman world
+                valued the cuttlefish as a source of the unique brown pigment the creature releases from its siphon when
+                it is alarmed. The word for it in both Greek and Latin, sepia, now refers to the reddish-brown color
+                sepia in English.
+                <a id="first" href="google">Google</a>
+            </p>
+            <hr>
+            <div>
+                <label>Username</label>
+                <input type="username" placeholder="username">
+                <label for="password_1">Password</label>
+                <input type="password" id="password_1" placeholder="password">
+                <button>Submit</button>
+            </div>
+        </section>
+        <hr>
+        <section class="display">
+            <!-- Display -->
+            <h1 id="display">I AM DISPLAY</h1>
+            </div>
+            <div class="display"></div>
+            <div class="display"></div>
+            <div class="display"></div>
+        </section>
+
+        <div class="display_1">The "cuttle" in cuttlefish comes from the Old English name for the species,
+            cudele,
+            which may be
+            cognate
+            with the Old Norse koddi (cushion) and the Middle Low German Kudel (rag).[5] The Greco-Roman world
+            valued the cuttlefish as a source of the unique brown pigment the creature releases from its siphon
+            when
+            it is alarmed. The word for it in both Greek and Latin, sepia, now refers to the reddish-brown color
+            sepia in English.
+        </div>
+
+        <div class="display_1">The "cuttle" in cuttlefish comes from the Old English name for the species,
+            cudele,
+            which may be
+            cognate
+            with the Old Norse koddi (cushion) and the Middle Low German Kudel (rag).[5] The Greco-Roman world
+            valued the cuttlefish as a source of the unique brown pigment the creature releases from its siphon
+            when
+            it is alarmed. The word for it in both Greek and Latin, sepia, now refers to the reddish-brown color
+            sepia in English.
+        </div>
+
+        <hr>
+
+        <section id="rgba">
+            <div id="rgba">The "cuttle" in cuttlefish comes from the Old English name for the species, cudele, which
+                may be cognate
+                with the Old Norse koddi (cushion) and the Middle Low German Kudel (rag).[5] The Greco-Roman world
+                valued the cuttlefish as a source of the unique brown pigment the creature releases from its siphon when
+                it is alarmed. The word for it in both Greek and Latin, sepia, now refers to the reddish-brown color
+                sepia in English.</div>
+
+            <div id="opacity">The "cuttle" in cuttlefish comes from the Old English name for the species, cudele, which
+                may be cognate
+                with the Old Norse koddi (cushion) and the Middle Low German Kudel (rag).[5] The Greco-Roman world
+                valued the cuttlefish as a source of the unique brown pigment the creature releases from its siphon when
+                it is alarmed. The word for it in both Greek and Latin, sepia, now refers to the reddish-brown color
+                sepia in English.</div>
+        </section>
+
+        <hr>
+
+        <!-- Position -->
+
+        <section id="static">
+            <h2>Static</h2>
+            <div class="position"></div>
+            <div class="position" id="position_1"></div>
+            <div class="position"></div>
+        </section>
+
+        <section id="relative">
+            <h2>Relative</h2>
+            <div class="position"></div>
+            <div class="position" id="position_1"></div>
+            <div class="position"></div>
+        </section>
+
+        <section id="absolute">
+            <h2>Absolute</h2>
+            <div class="position"></div>
+            <div class="position" id="position_1"></div>
+            <div class="position"></div>
+        </section>
+
+        <section id="fixed">
+            <h2>Fixed</h2>
+            <div class="position"></div>
+            <div class="position" id="position_1"></div>
+            <div class="position"></div>
+        </section>
+
+        <!-- Transition -->
+
+        <section>
+            <h2>Transition</h2>
+            <div class="transition"></div>
+        </section>
+
+        <section id="transition">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+
+        <section>
+            <div id="vd">
+                <div class="vd">Home</div>
+                <div class="vd">About</div>
+                <div class="vd">Contact us</div>
+                <div class="vd">Links</div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Transform -->
+
+        <section class="transform">
+            <h1>Transform</h1>
+            <h1>Transform</h1>
+            <h1>Transform</h1>
+            <h1>Transform</h1>
+        </section>
+
+        <section class="transform_1">
+            <h1>Transform</h1>
+            <h1>Transform</h1>
+            <h1>Transform</h1>
+            <h1>Transform</h1>
+        </section>
+        <hr id="test_1">
+        <section>
+            <div id="test"></div>
+        </section>
+
+
+        <!-- The truth about Background -->
+
+        <section id="background">
+
+        </section>
+
+        <hr>
+        <!-- Flexbox -->
+        <h1 style="text-align:center ; text-transform: uppercase ; color:black">Flexbox</h1>
+        <section>
+            <div id="container">
+                <div class="items" style="background-color: #ade8f4"></div>
+                <div class="items" style="background-color: #023e8a"></div>
+                <div class="items" style="background-color: #00b4d8"></div>
+                <div class="items" style="background-color: #0096c7"></div>
+                <div class="items" style="background-color: #005f73"></div>
+            </div>
+        </section>
+        <hr>
+        <!-- Flex-Basis, Grow and Shrink -->
+
+        <section>
+            <div id="container_1">
+                <div class="items_1" style="background-color: #ade8f4"></div>
+                <div class="items_1" style="background-color: #023e8a"></div>
+                <div class="items_1" style="background-color: #00b4d8"></div>
+                <div class="items_1" style="background-color: #0096c7"></div>
+                <div class="items_1" style="background-color: #005f73"></div>
+            </div>
+        </section>
+        <hr>
+        <!-- Function -->
+        <h1 style="text-align:center; color:black">Function</h1>
+        <section>
+            <div id="function"></div>
+        </section>
+        <hr>
+        <!-- Test -->
+
+        <section>
+            <div class="btn_test">
+                <div class="btn btn--success">GO TO NEXT APPOROVAL</div>
+                <div class="btn btn--warn btn--disable">OK</div>
+                <div class="btn btn--error">TRY AGAIN</div>
+            </div>
+        </section>
+        <hr>
+
+        <!-- Practice BEM -->
+
+        <div onclick="ShowSucess()" class="successful">
+            <h3>Show Success toast</h3>
+        </div>
+
+        <div onclick="ShowInfo()" class="Info">
+            <h3>Show info toast</h3>
+        </div>
+
+        <div id="toast"></div>
+
+        <hr>
+
+    </main>
+</body>
+
+</html>

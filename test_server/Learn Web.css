@@ -1,0 +1,591 @@
+@import url('https://fonts.googleapis.com/css2?family=Shizuru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap');
+h1.text{
+    text-align:center;
+    /* width: 50%; */
+    text-decoration:underline overline red;
+}
+
+p.text{
+    text-align:center;
+    font-weight:bolder;
+    line-height: 2;
+}
+
+/* Cách đặt biến  toàn cục trong CSS (Global Variable) */
+:root{
+    --text: center;
+}
+h1{
+    text-align: var(--text);
+}
+
+:root{
+    --test: 250;
+}
+h1{
+    color:rgb(var(--test), 118, 250);
+}
+/* cách đặt biến cục bộ trong CSS (Local Variable ) */
+h1.text{
+    --my_color: blue;
+    text-align: center;
+    color: var(--my_color);
+}
+h1.demo-1{
+    text-decoration:overline;
+}
+h1.demo-2{
+    text-decoration: underline;
+}
+h1.demo-3{
+    text-decoration:line-through;
+}
+h1.demo-4{
+    text-decoration:underline wavy blue 2px;
+}
+a#demo{
+    text-decoration:none;
+}
+
+h1.text_1{
+    letter-spacing: 5px;
+}
+
+h1.text_2{
+    font-size: 50px;
+    text-transform:uppercase;
+}
+#css_demo{
+    text-align:center;
+}
+/* Thứ tự nạp font: user agent -> OS font -> font tự nạp */
+p.text_2{
+    line-height: 2;
+    font-family: shizuru;
+}
+
+
+p a#first[href*="google"]{
+    color:rgb(243, 124, 144);
+}
+p a[href*="google"]{
+    color:rgb(70, 118, 250);
+}
+p > a[href*="google"]{
+    color:green;
+}
+li>a{
+    color:rgb(85, 85, 3);
+}
+a[href="home"]{
+    color:red;
+}
+input[type="password"]{
+    color:greenyellow;
+}
+div > button:hover{
+    color:white;
+}
+
+/* Pseudo Classes */
+h2.text_3:hover{
+ text-decoration:underline gray;
+}
+div > button:active{
+    background-color: #48cae4;
+}
+
+/* Pseudo-Element */
+p.text_3::first-line{
+    color:#f3722c;
+}
+p.text_3::selection{
+    background-color:#8ecae6;
+}
+
+/* BOX */
+p.text_2{
+    width: 300px;
+    height: 538px;
+    background-color: #90e0ef;
+    border-width: 2px;
+    border-style: solid;
+    border-color: red;
+    padding: 20px;
+    box-sizing: border-box; /* (cố định lại box) */
+}
+div.text_2{
+    border-width:10px;
+    border-style: dashed double groove dotted;
+    border-color: #0a9396;
+    background-color: #f5cac3;
+    border-left-color: #6b705c;
+    padding:20px;
+}
+
+/* common for use because it's short */
+div.text_2_1{
+    background-color:aliceblue;
+    border: 2px green solid;
+    border-radius: 100px;
+}
+
+div.text_2_2{
+    background-color: #f5cac3;
+    border-width: 2px;
+    border-style: solid;
+    border-color: red; 
+    padding:80px 60px 40px;
+    margin: 50px;
+}
+div.text_2_3{
+    background-color: #e9edc9;
+    border: 2px #4cc9f0 solid;
+}
+
+div>button{
+    padding: 20px; 
+}
+
+
+/* Display */
+
+div.display_1{
+    width: 300px;
+    height: 300px;
+    background-color: papayawhip;
+    border: 4px solid green;
+    margin-top: 20px;
+    display:inline-block;
+    padding: 30px;
+    box-sizing:border-box;
+}
+h1#display{
+    text-align:left;
+    background-color:#6b705c;
+    border: 2px solid black;
+    width: 200px;
+    margin: 20px;
+}
+div.display{
+    width: 300px;
+    height: 600px;
+    background-color: rosybrown;
+    border: 2px solid black;
+    display:inline-block;
+}
+
+/* Opacity & The Alpha channel */
+
+section#rgba{
+    width: 500px;
+    height:500px;
+    background-color: rgb(247, 208, 215);
+}
+#rgba{
+    width:50%;
+    height:50%;
+    background-color: rgba(255,206,126,0.9);
+}
+#opacity{
+    width:50%;
+    height:50%;
+    background-color: yellow;
+    opacity:0.1;
+}
+
+/* Position */
+
+.position{
+    width:100px;
+    height:100px;
+    background-color:rgb(85, 85, 3);
+    border:2px solid black;
+    margin:10px;
+    display:inline-block;
+}
+#position_1{
+    background-color:#48cae4;
+}
+
+#static #position_1{
+    position:static;
+}
+
+#relative #position_1{
+    position:relative;
+    top: 50px;
+    left:50px;
+}
+
+/* #absolute{
+    position: absolute;
+} */
+
+#absolute #position_1{
+    position:absolute;
+    top: 1px;
+    left:1px;
+}
+
+#fixed #position_1{
+    /* position:fixed; */
+    top:0px;
+    left:0px;
+}
+
+/* Transition */
+
+.transition{
+    width:300px;
+    height:300px;
+    background-color:red;
+    /* transition: 5s; */
+    transition:all 5s ;
+    /* transition:background-color 2s, border-radius 2s; */
+}
+
+.transition:hover{
+    background-color:#48cae4;
+    border-radius: 50%;
+}
+
+section#transition div{
+    height:100px;
+    width:100px;
+    background-color:aqua;
+    margin:20px 0;
+    transition:margin-left 3s;
+}
+
+section#transition:hover div{
+    margin-left:500px;
+    background-color:#6b705c;
+}
+
+section#transition div:nth-of-type(1){
+    transition-timing-function:ease-in;
+}
+section#transition div:nth-of-type(2){
+    transition-timing-function:ease-out;
+}
+section#transition div:nth-of-type(3){
+    transition-timing-function:cubic-bezier(0.7, 0, 0.84, 0);
+}
+section#transition div:nth-of-type(4){
+    transition-timing-function:cubic-bezier(0.85, 0, 0.15, 1);
+}
+#vd{
+    height: 50px;
+    width:500px;
+    border: black solid 2px;
+}
+.vd{
+    height:30px;
+    width:100px;
+    background-color:black;
+    color:white;
+    border:green solid 2px;
+    margin: 10px;
+    padding: 5px;
+    box-sizing:border-box;
+    display:inline-block;
+    text-align:center;
+}
+.vd:hover{
+    background-color: white;
+    transition: 4s;
+    color:black;
+}
+
+#test{
+    width:500px;
+    height:500px;
+    background-image: url(https://vansu.net/sites/default/files/pictures/nhung-su-that-thu-vi-ve-loai-soc-hinh-2.jpg);
+    background-size:500px;
+    background-repeat:no-repeat;
+    transition:5s;
+}
+
+#test:hover{
+    background-image: url(http://khoahocphattrien.vn/Images/Uploaded/Share/2016/10/29/36f1.jpg);
+    background-size:500px;
+    background-repeat:no-repeat;
+}
+
+/* Transform */
+
+section.transform h1{
+    background-color: rgb(51, 182, 182);
+    border: 2px solid black;
+    color:white;
+    padding: 2%;
+    width:300px;
+    text-align:center;
+    margin: 30px auto;
+    font-weight: lighter;
+}
+section.transform_1 h1{
+    background-color: rgb(51, 182, 182);
+    border: 2px solid black;
+    color:white;
+    padding: 2%;
+    width:300px;
+    text-align:center;
+    margin: 30px auto;
+    font-weight: lighter;
+}
+
+.transform h1:nth-of-type(2n){
+    background-color:#23405c;
+}
+.transform h1:nth-of-type(3n){
+    background-color:#afb86d;
+}
+.transform h1:nth-of-type(4n){
+    background-color:#1e3d1d;
+}
+
+.transform_1 h1:nth-of-type(2n){
+    background-color:#23405c;
+}
+.transform_1 h1:nth-of-type(3n){
+    background-color:#afb86d;
+}
+.transform_1 h1:nth-of-type(4n){
+    background-color:#1e3d1d;
+}
+
+.transform h1:nth-of-type(1){
+    transform-origin: bottom right;
+    transform: rotate(90deg);
+}
+.transform h1:nth-of-type(2){
+    transform:scale(0.5, 1);
+}
+.transform h1:nth-of-type(3){
+    transform:translate(50px, 50px);
+}
+
+.transform_1 h1:nth-of-type(3){
+    transform:skew(10deg, 20deg);
+}
+
+.transform_1 h1:nth-of-type(2){
+    transform:translate(400px, 200px) rotate(180deg);
+}
+
+
+/* The truth about Background */
+
+section#background{
+    height:800px;
+    width:70%;
+    background-image:url(https://images.unsplash.com/photo-1646100960029-967036496807?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1156&q=80);
+    margin: 0 auto;
+    background-size:cover;
+    background-position: right;
+}
+
+
+/* Flexbox */
+
+#container{
+    width: 90%;
+    height: 500px;
+    background-color:#003049;
+    margin: 0 auto;
+    border: 5px solid black;
+    display:flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items:baseline;
+    align-content:flex-start;
+}
+
+#container div{
+    width: 200px;
+    height:200px;
+    font-size: 4em;
+    text-align:center;
+}
+div.items:nth-of-type(3){
+    align-self:flex-end;
+}
+div.items:nth-of-type(2){
+    align-self:center;
+}
+
+/* Flex-Basis, Grow and Shrink */
+
+#container_1{
+    width: 90%;
+    height: 500px;
+    background-color:#003049;
+    margin: 0 auto;
+    border: 5px solid black;
+    display:flex;
+    flex-direction: row; 
+    /* justify-content: center; */
+    /* flex-wrap:wrap; */
+}
+
+#container_1 div{
+    width: 200px;
+    height:200px;
+    /* text-align:center; */
+    /* flex-grow:1; */
+}
+div.items_1:nth-of-type(1){
+    flex-grow:0.5;
+}
+div.items_1:nth-of-type(2){
+    flex-grow:1;
+}
+div.items_1:nth-of-type(4){
+    flex-grow:2;
+}
+div.items_1:nth-of-type(5){
+    flex-grow:3;
+}
+
+/* Function */
+
+#function{
+    width:100%;
+    height:100vh;
+    background-image:linear-gradient(0deg, rgba(233, 224, 224, 0.5), rgba(71, 4, 4, 0.5)) , url(https://allimages.sgp1.digitaloceanspaces.com/photographercomvn/2021/03/1615094232_Girl-Cute-%E2%80%93-Tong-hop-hinh-anh-gai-xinh-de.jpg);
+    background-repeat: no-repeat;
+    background-size:40%;
+    background-position:center;
+}
+
+/* Test */
+
+.btn_test{
+    width:100%;
+    height:300px;
+    border:solid red 1px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.btn{
+    display:inline-block;
+    min-width:70px;
+    text-align:center;
+    border-radius:50px;
+    padding:12px 48px;
+    cursor:pointer;
+    transition: opacity 0.2s ease;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+.btn+.btn{
+    margin-left:20px;
+}
+
+.btn--success{
+    background-color:rgb(64, 243, 64);
+}
+.btn--warn{
+    background-color: rgb(243, 243, 72);
+}
+.btn--error{
+    background-color:rgb(248, 79, 79);
+}
+
+.btn--disable{
+    opacity:0.5 !important;
+    cursor:default;
+}
+
+/* Practice BEM */
+
+.toast__container{
+    display:flex;
+    /* width:100%;
+    height:400px;
+    border:solid 2px red; */
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.toast{
+    display:flex;
+    background-color:#fff;
+    justify-content: center;
+    align-items:center;
+    border-radius:2px;
+    min-width:400px;
+    max-width:450px;
+    border-radius: 5px 0 0 5px; 
+    border:solid 1px rgb(206, 203, 203);
+    box-shadow:0 3px 8px rgb(109, 99, 99);
+}
+
+.toast+.toast{
+    margin-top:20px;
+}
+
+.toast__icon{
+    width:20px;
+    height:20px;
+    margin:0 15px;
+    padding:5px;
+    font-size:18px;
+    border:solid 1px;
+    border-radius:50%;
+    text-align:center;
+    color:white;
+}
+
+.toast__close{
+    margin-left:15px;
+    padding:0px 16px;
+    color:gray;
+    cursor: pointer;
+}
+
+.toast__close:hover{
+    opacity:0.5;
+}
+.toast__title{
+    font-size: 16px;
+  font-weight: 600;
+    margin-bottom:0;
+}
+
+.toast__body{
+    flex-grow:1;
+}
+
+.toast__msg{
+    margin-top:10px;
+}
+
+.toast--success{
+    background-color:rgb(18, 247, 18);
+}
+.toast--info{
+    background-color:rgb(112, 112, 245);
+}
+.toast--warning{
+    background-color:rgb(233, 184, 79);
+}
+
+.toast__border--success{
+    border-left:solid 4px rgb(18, 247, 18);
+}
+.toast__border--info{
+    border-left:solid 4px rgb(112, 112, 245);
+}
+.toast__border--warning{
+    border-left:solid 4px rgb(233, 184, 79);
+}

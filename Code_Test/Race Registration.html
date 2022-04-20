@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<!-- Nên dùng: External (CSS) -->
+
+<head>
+    <title>Race Registration</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <h1 style="color:aqua; font-size: 50px;">Race Registration</h1>
+    <section>
+
+        <form action="/tasco">
+            <div>
+                <p>
+                    <label class="text_color" for="first">First Name</label>
+                    <input type="text" id="first" required>
+                </p>
+                <p>
+                    <label class="text_color" for="last">Last Name</label>
+                    <input type="text" id="last" required>
+                </p>
+            </div>
+
+            <div>
+                Slect a Race:
+                <div>
+                    <p>
+                        <input type="radio" name="Race" id="fun">
+                        <label for="fun">Fun Run 5k</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="Race" id="half">
+                        <label for="half">Half Marathon</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="full" name="Race">
+                        <label for="full">Full Marathon</label>
+                    </p>
+                </div>
+            </div>
+
+            <div>
+
+                <p>
+                    <label id="first" class="text_color" for="email">Email</label>
+                    <input type="email" id="email" required>
+                </p>
+                <p>
+                    <label class="text_color" for="password">Password</label>
+                    <input type="password" id="password" required>
+                </p>
+                <p>
+                    <label>Select Age Group</label>
+                    <select>
+                        <option value="under 18">Under 18</option>
+                        <option value="18-30">18-30</option>
+                        <option value="30-50">30-50</option>
+                        <option value="50+">50+</option>
+                    </select>
+                </p>
+            </div>
+            <button>Register</button>
+        </form>
+    </section>
+</body>
+
+</html>
